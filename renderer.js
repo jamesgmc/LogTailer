@@ -3,6 +3,7 @@ const logContainer = document.getElementById('log-container');
 const logOutput = document.getElementById('log-output');
 const currentFileDisplay = document.getElementById('current-file');
 const closeFileBtn = document.getElementById('close-file-btn');
+const clearLogsBtn = document.getElementById('clear-logs-btn');
 const appBody = document.body;
 
 // Drag and Drop Events
@@ -37,6 +38,11 @@ appBody.addEventListener('drop', (e) => {
 closeFileBtn.addEventListener('click', () => {
   logContainer.classList.add('hidden');
   dropZone.classList.remove('hidden');
+  logOutput.innerHTML = '';
+});
+
+// Clear Logs Event
+clearLogsBtn.addEventListener('click', () => {
   logOutput.innerHTML = '';
 });
 

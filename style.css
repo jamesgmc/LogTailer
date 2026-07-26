@@ -133,7 +133,12 @@ body.drag-over .drop-content {
   max-width: 50vw;
 }
 
-.close-btn {
+.log-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-btn {
   background: transparent;
   border: 1px solid var(--border-color);
   color: var(--text-muted);
@@ -145,7 +150,7 @@ body.drag-over .drop-content {
   transition: all 0.2s ease;
 }
 
-.close-btn:hover {
+.action-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   color: var(--text-main);
 }
