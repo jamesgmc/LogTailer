@@ -1,0 +1,15 @@
+{
+  "name": "logtailer",
+  "version": "1.0.0",
+  "description": "A GUI tool to tail logs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "tail": "*"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}
